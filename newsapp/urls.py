@@ -8,4 +8,6 @@ app_name = "newsapp"
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
     path('detail/<int:pk>', DetailView.as_view() ,name = 'detail'),
+    path('categories', CategoriesView.as_view() ,name = 'catagories'),
+    path('categories/<int:pk>', CategoryView.as_view() ,name = 'catagory'),
 ]
